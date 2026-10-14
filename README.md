@@ -2,16 +2,15 @@
 
 **When the power goes out, the whole building lights up.**
 
-Interactive blackout-night experience for apartment blocks. Concept & prototype by Chandra Pavansai for DJXHack Everyday Magic 2026.
+Interactive blackout-night experience for apartment blocks.  
+Concept & prototype by Chandra Pavansai for **DJXHack Everyday Magic 2026**.
 
-## Live demo
+## Live / Download the working prototype
 
-Open `index.html` in any modern browser (or use GitHub Pages / Vercel).
+Full single-file prototype (updated 9.6 version with clarity & feasibility polish):
 
-- Point your mouse (or phone torch via camera) to reveal neighbours
-- Hold to throw a shadow bird
-- Clap (or press Space) when everyone is found
-- The paths of every torch stay as tonight’s constellation poster
+- **Direct download / open**: [LightGayi_App_updated.html](https://drive.google.com/file/d/1MFVRTsuEJqJvayEwyFi9zxAlxPqwjduu/view?usp=drivesdk)  
+  (File → Download, then open in any modern browser. Camera & mic work when opened as a local file or on a real host.)
 
 ## What works right now
 
@@ -20,17 +19,27 @@ Open `index.html` in any modern browser (or use GitHub Pages / Vercel).
 - Camera bright-blob torch tracking
 - Microphone clap detection
 - Host setup guide, safety checklist, lumen calculator
+- Clear real-vs-stand-in labelling for judges
 
 Data stays in the browser (localStorage). No server required for the core loop.
 
-## Deploy
+## Deploy on Vercel (recommended)
+
+1. Download the HTML above and rename it to `index.html`
+2. Create a new Vercel project
+3. Upload the single file (or drag the folder)
+4. Framework Preset: **Other**
+5. Deploy → public URL ready
+
+Or from this repo after placing `index.html` in root:
 
 ```bash
-# Vercel
 npx vercel --prod
-
-# or GitHub Pages: Settings → Pages → Deploy from main / root
 ```
+
+## GitHub Pages
+
+Settings → Pages → Source: Deploy from a branch → main / root
 
 ## Credits
 
